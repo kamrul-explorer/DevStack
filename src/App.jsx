@@ -4,6 +4,7 @@ import './App.css';
 import { Toaster } from 'react-hot-toast';
 import MainLayout from './components/MainLayout';
 import { Suspense } from 'react';
+import Footer from './components/Footer'
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
             <Suspense fallback={<p>Loading....</p>}>
                 <MainLayout dataPromise = {dataPromise()}/>
             </Suspense>            
-            <h2>Footer</h2>
+            <Footer/>
             <Toaster />
         </div>
     );

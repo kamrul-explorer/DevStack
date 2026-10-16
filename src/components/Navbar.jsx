@@ -42,6 +42,7 @@ function Navbar() {
                         <li onClick={() => setMenuOpen(false)} className="text-pink-700">Home</li>
                         <li onClick={() => setMenuOpen(false)}>Technologies</li>
                         <li onClick={() => setMenuOpen(false)}>Projects</li>
+                        <li onClick={() => setMenuOpen(false)}>About</li>
                         <li onClick={() => setMenuOpen(false)}>Contact</li>
                     </ul>
                 )}

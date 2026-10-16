@@ -58,7 +58,7 @@ function Allstacks({ allstacks }) {
       </div>
 
       
-      <aside className="col-span-12 md:col-span-3 mt-27">
+      <aside className="col-span-12 md:col-span-3 md:mt-27">
         <div className="rounded-2xl border border-slate-100 bg-white p-5 shadow-sm">
 
           <h3 className="text-lg font-bold text-slate-900">
