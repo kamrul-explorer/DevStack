@@ -1,7 +1,12 @@
 
 import bannerImg from '../assets/banner-stack.png';
+import {use} from 'react';
 
-function MainLayout() {
+
+function MainLayout({dataPromise}) {
+    const allstacks = use(dataPromise);
+    console.log(allstacks);
+
   return (
     <section className="w-full overflow-hidden bg-[#fcfbfd]">
       <div className="container mx-auto flex min-h-116.25 flex-col items-center justify-between px-3 py-4 md:min-h-116.25 md:flex-row md:px-7 md:py-7">
