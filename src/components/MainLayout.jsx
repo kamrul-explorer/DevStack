@@ -1,17 +1,18 @@
 
 import bannerImg from '../assets/banner-stack.png';
 import {use} from 'react';
+import Allstacks from './Allstacks';
 
 
 function MainLayout({dataPromise}) {
     const allstacks = use(dataPromise);
-    console.log(allstacks);
+    // console.log(allstacks);
 
   return (
     <section className="w-full overflow-hidden bg-[#fcfbfd]">
       <div className="container mx-auto flex min-h-116.25 flex-col items-center justify-between px-3 py-4 md:min-h-116.25 md:flex-row md:px-7 md:py-7">
 
-        {/* Left Content */}
+       
         <div className="w-full text-center md:w-1/2 md:text-left">
           <h1 className="my-1 text-[32px] font-extrabold leading-[1.15] tracking-tight text-[#111827] sm:text-4xl md:my-4 md:text-5xl lg:text-6xl">
             Build Your Ideal
@@ -29,7 +30,7 @@ function MainLayout({dataPromise}) {
             next project.
           </p>
 
-          {/* Buttons */}
+        
           <div className="mt-7 flex flex-wrap justify-center gap-3 md:justify-start">
             <button className="rounded-lg bg-linear-to-r from-[#ff681f] to-[#ec3e9b] px-4 py-3 text-sm font-medium text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-lg sm:px-6">
               Explore Technologies
@@ -41,7 +42,7 @@ function MainLayout({dataPromise}) {
           </div>
         </div>
 
-        {/* Banner Image */}
+     
         <div className="mt-5 flex w-full justify-center md:mt-0 md:w-1/2 md:justify-end">
           <img
             src={bannerImg}
@@ -51,7 +52,10 @@ function MainLayout({dataPromise}) {
         </div>
 
       </div>
+      <Allstacks allstacks={allstacks}/>
     </section>
+
+    
   );
 };
 
